@@ -1,0 +1,102 @@
+html,body{
+    background:linear-gradient(90deg,violet,blue);
+    margin: 0;
+
+}
+
+.card{
+    min-height: 30vh;
+    width: 500px;
+    background-color: #fff;
+    margin: 200px auto 0;
+    border-radius: 20px;
+    border: 3px solid orange;
+    box-shadow: #fff;
+    padding: 20px;
+}
+
+.input{
+    display: flex;
+}
+.task-input{
+    height: 30px;
+    flex: 3;
+    text-align: center;
+    border-radius: 40px;
+   
+}
+
+.add-button{
+    flex: .2;
+    border-radius: 30%;
+    width:15px;
+    height: 35px;
+    margin-left: 20px;
+    cursor: pointer;;
+    background-color: orange;
+    border: violet;
+    color: #fff;
+}
+
+.heading{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: -2px;
+}
+
+
+.task-list{
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 30px;
+    
+
+}
+
+
+.task-list li{
+    color: brown;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+}
+
+@media (max-width:600px){
+    .input{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        
+    }
+    .task-input{
+        width: 80vw;
+    }
+    .card{
+       width: 100%;
+      
+       min-width:400px;
+    }
+    .add-button{
+        flex: 1;
+        width: 50vw;
+        height: 0vw;
+        border-radius: 10px;
+    }
+
+
+}
+
+li button{
+    float: right;
+    cursor:  pointer;
+    background-color: #fff;
+    border: 1px solid orange;
+    border-radius: 20px;
+    margin-left: 10px;
+    color: orange;
+   
+}
+
+li button:hover{
+    background-color: orange;
+    color: #fff;
+}
